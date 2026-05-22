@@ -1,39 +1,45 @@
-<<<<<<< HEAD
+## java-dsa
+
+A small collection of Java data-structures and algorithm examples and patterns used for learning and demonstrations.
+
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository uses a simple layout:
+- `src/` — Java source files
+- `lib/` — optional libraries
+- `bin/` — compiled classes (ignored by Git)
 
-## Folder Structure
+## Prerequisites
 
-The workspace contains two folders by default, where:
+- Java JDK 17 or newer installed and on your `PATH`.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Build
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Compile sources into the `bin/` folder:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```bash
+javac -d bin src/*.java
+```
 
-## Dependency Management
+## Run
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-=======
-## Getting Started
+Run the `App` class from the compiled `bin` directory:
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+```bash
+java -cp bin App
+```
 
-## Folder Structure
+If you use preview language features, enable them when running (example):
 
-The workspace contains two folders by default, where:
+```bash
+java --enable-preview -cp bin App
+```
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Notes
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- The repository ignores compiled artifacts (`bin/`) via `.gitignore`.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Contributing
 
-## Dependency Management
+Feel free to open issues or submit pull requests with improvements or new examples.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
->>>>>>> 8e70abd (Update App.java)
