@@ -4,7 +4,7 @@
 
 $repo = Get-Location
 
-$watcher = New-Object System.IO.FileSystemWatcher $repo.Path, '*.*'
+$watcher = New-Object System.IO.FileSystemWatcher $repo.Path, '*.java'
 $watcher.IncludeSubdirectories = $true
 $watcher.EnableRaisingEvents = $true
 
@@ -21,6 +21,8 @@ $shouldIgnore = {
 
 $onEvent = {
     param($s, $e)
+    # Only handle Java source files
+    if (-not ($e.FullPath.ToLower().EndsWith('.java'))) { return }
     if (& $shouldIgnore $e.FullPath) { return }
 
     if ($timer) {
