@@ -38,9 +38,15 @@ $onEvent = {
             $status = git status --porcelain
             if ($status) {
                 git add -A
-                git commit -m "auto-save: $(Get-Date -Format o)" 2>$null
+                # build a descriptive commit message: branch | files | timestamp
+                $branch = git rev-parse --abbrev-ref HEAD
+                $files = git diff --cached --name-only | Where-Object { $_ } | ForEach-Object { $_.Trim() } | Out-String
+                $files = $files -replace "\r?\n", ", "
+                if ($files.Length -gt 200) { $files = $files.Substring(0,200) + "..." }
+                $msg = "auto-save: $branch | $files | $(Get-Date -Format o)"
+                git commit -m $msg 2>$null
                 git push origin HEAD
-                Write-Host "[auto-push] pushed at $(Get-Date -Format o)"
+                Write-Host "[auto-push] pushed at $(Get-Date -Format o) - $files"
             }
         } catch {
             Write-Host "[auto-push] error: $($_.Exception.Message)"
