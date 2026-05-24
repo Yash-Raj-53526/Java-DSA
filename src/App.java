@@ -1,13 +1,13 @@
 import java.util.*;
 
 public class App {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        //System.out.print("Enter a number: ");
-        //int n = sc.nextInt();
-        // for(int i = 1; i <= 10; i++){  //(conditon, initialization, updation)
-        //     System.out.println(n + " X " + i + " = " + (n * i));
-        // }
+     public static void main(String[] args){
+         Scanner sc = new Scanner(System.in);
+         //System.out.print("Enter a number: ");
+         //int n = sc.nextInt();
+         // for(int i = 1; i <= 10; i++){  //(conditon, initialization, updation)
+         //     System.out.println(n + " X " + i + " = " + (n * i));
+         // }
 
 
         // int i = 1;
@@ -115,143 +115,143 @@ public class App {
         //     System.out.println(); 
         // }
 
+         //floids triangle
+         // int n = 5;
+         // int number = 1;
+         // for(int i = 1 ; i<= n; i++){
+         //     for(int j = 1; j <= i; j++){
+         //         System.out.print(number+" ");
+         //         number++;
+         //     }
+         //     System.out.println();
+         // }
 
-        //floids triangle
-        // int n = 5;
-        // int number = 1;
-        // for(int i = 1 ; i<= n; i++){
-        //     for(int j = 1; j <= i; j++){
-        //         System.out.print(number+" ");
-        //         number++;
-        //     }
-        //     System.out.println();
-        // }
-
-        // int n = 5;
-        // for(int i = 1 ; i<=n; i++) {
-        //     for(int j = 1; j <= i; j++){
-        //         int sum = i + j;
-        //         if(sum % 2 == 0){
-        //             System.out.print("1 ");
-        //         } else {
-        //             System.out.print("0 ");
-        //         }
-        //     }
-        //     System.out.println();
-        // }
+         // int n = 5;
+         // for(int i = 1 ; i<=n; i++) {
+         //     for(int j = 1; j <= i; j++){
+         //         int sum = i + j;
+         //         if(sum % 2 == 0){
+         //             System.out.print("1 ");
+         //         } else {
+         //             System.out.print("0 ");
+         //         }
+         //     }
+         //     System.out.println();
+         // }
 
         
         
 
-        // //butterfly pattern
-        // int n = 5;
-        // //1st half
-        // for(int i = 1; i <=n; i++) {
-        //     //1st part
-        //     for(int j = 1; j <= i; j++){
-        //         System.out.print("*");
-        //     }
-        //     //spaces
-        //     for(int j = 1; j <= 2*(n-i); j++){
-        //         System.out.print(" ");
-        //     }
-        //     //2nd part
-        //     for(int j = 1; j <= i; j++){
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
-        // }
-        // //2nd half
-        // for(int i = n; i >= 1; i--) {
-        //     //1st part
-        //     for(int j = 1; j <= i; j++){
-        //         System.out.print("*");
-        //     }
-        //     //spaces
-        //     for(int j = 1; j <= 2*(n-i); j++){
-        //         System.out.print(" ");
-        //     }
-        //     //2nd part
-        //     for(int j = 1; j <= i; j++){
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
-        // }
+         // //butterfly pattern
+         // int n = 5;
+         // //1st half
+         // for(int i = 1; i <=n; i++) {
+         //     //1st part
+         //     for(int j = 1; j <= i; j++){
+         //         System.out.print("*");
+         //     }
+         //     //spaces
+         //     for(int j = 1; j <= 2*(n-i); j++){
+         //         System.out.print(" ");
+         //     }
+         //     //2nd part
+         //     for(int j = 1; j <= i; j++){
+         //         System.out.print("*");
+         //     }
+         //     System.out.println();
+         // }
+         // //2nd half
+         // for(int i = n; i >= 1; i--) {
+         //     //1st part
+         //     for(int j = 1; j <= i; j++){
+         //         System.out.print("*");
+         //     }
+         //     //spaces
+         //     for(int j = 1; j <= 2*(n-i); j++){
+         //         System.out.print(" ");
+         //     }
+         //     //2nd part
+         //     for(int j = 1; j <= i; j++){
+         //         System.out.print("*");
+         //     }
+         //     System.out.println();
+         // }
 
 
-        // solid rhombus
-        // int n = 5;
-        // for(int i = 1 ; i <= n; i++){
-        //     //spaces
-        //     for(int j = 1; j <= n-i; j++){
-        //         System.out.print(" ");
-        //     }
-        //     //stars
-        //     for(int j = 1; j <= n; j++){
-        //         System.out.print("*");
-        //     }
-        //     System.out.println();
-        // }
+         // solid rhombus
+         // int n = 5;
+         // for(int i = 1 ; i <= n; i++){
+         //     //spaces
+         //     for(int j = 1; j <= n-i; j++){
+         //         System.out.print(" ");
+         //     }
+         //     //stars
+         //     for(int j = 1; j <= n; j++){
+         //         System.out.print("*");
+         //     }
+         //     System.out.println();
+         // }
 
-        //number pyramid
-        // int n = 5;
-        // for(int i = 1; i <= n; i++){
-        //     //spaces
-        //     for(int j = 1; j <= n-i; j++){
-        //         System.out.print(" ");
-        //     }
-        //     //numbers -> PRINT ROW NUMBER 'i', 'i' times
-        //     for(int j = 1; j <= i; j++){
-        //         System.out.print(i+" ");
-        //     }
-        //     System.out.println();
-        // }
+         //number pyramid
+         // int n = 5;
+         // for(int i = 1; i <= n; i++){
+         //     //spaces
+         //     for(int j = 1; j <= n-i; j++){
+         //         System.out.print(" ");
+         //     }
+         //     //numbers -> PRINT ROW NUMBER 'i', 'i' times
+         //     for(int j = 1; j <= i; j++){
+         //         System.out.print(i+" ");
+         //     }
+         //     System.out.println();
+         // }
 
 
-        //palindromic pattern
-        // int n = 5;
-        // for(int i = 1 ; i <= n; i++){
-        //     //spaces
-        //     for(int j = 1; j <= n-i; j++){
-        //         System.out.print(" ");
-        //     }
-        //     //numbers -> print decreasing order
-        //     for(int j = i; j >= 1; j--){
-        //         System.out.print(j);
-        //     }
-        //     //numbers -> print increasing order
-        //     for(int j = 2; j <= i; j++){
-        //         System.out.print(j);
-        //     }
-        //     System.out.println();
+         //palindromic pattern
+         // int n = 5;
+         // for(int i = 1 ; i <= n; i++){
+         //     //spaces
+         //     for(int j = 1; j <= n-i; j++){
+         //         System.out.print(" ");
+         //     }
+         //     //numbers -> print decreasing order
+         //     for(int j = i; j >= 1; j--){
+         //         System.out.print(j);
+         //     }
+         //     //numbers -> print increasing order
+         //     for(int j = 2; j <= i; j++){
+         //         System.out.print(j);
+         //     }
+         //     System.out.println();
 
-        // }
+         // }
 
-        //diamond pattern
-        int n = 5;
-        //1st half
-        for(int i = 1; i<=n; i++){
-            //spaces
-            for(int j = 1;j <= n-i; j++){
-                System.out.print(" ");
-            }
-            //stars
-            for(int j = 1; j <= 2*i-1; j++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-        //2nd half
-        for(int i = n; i >= 1; i--){
-            //spaces
-            for(int j = 1; j <= n-i; j++){
-                System.out.print(" ");
-            }
-            //stars
-            for(int j = 1; j <= 2*i-1; j++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+         //diamond pattern
+         // int n = 5;
+         // //1st half
+         // for(int i = 1; i<=n; i++){
+         //     //spaces
+         //     for(int j = 1;j <= n-i; j++){
+         //         System.out.print(" ");
+         //     }
+         //     //stars
+         //     for(int j = 1; j <= 2*i-1; j++){
+         //         System.out.print("*");
+         //     }
+         //     System.out.println();
+         // }
+         // //2nd half
+         // for(int i = n; i >= 1; i--){
+         //     //spaces
+         //     for(int j = 1; j <= n-i; j++){
+         //         System.out.print(" ");
+         //     }
+         //     //stars
+         //     for(int j = 1; j <= 2*i-1; j++){
+         //         System.out.print("*");
+         //     }
+         //     System.out.println();
+         // }
+
     }
 }
