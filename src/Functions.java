@@ -30,23 +30,64 @@ public class Functions {
     //     System.out.println("Prime!");
     // }
 
-   // Two numbers are entered by the user, x and n. Write a function to find the value 
-   // of one number raised to the power of another i.e. x.
-    public static void power(int x, int n){
-        int result = 1;
-        for(int i = 1; i <= n; i++){
-            result = result * x;
+// Two numbers are entered by the user, x and n. Write a function to find the value 
+// of one number raised to the power of another i.e. x.
+    // public static void power(int x, int n){
+    //     int result = 1;
+    //     for(int i = 1; i <= n; i++){
+    //         result = result * x;
+    //     }
+    //     System.out.println(result);
+    // }   
+
+
+
+// Write a function to find the greatest common divisor (GCD) of two numbers.   
+    // public static void findGCD(int a, int b){
+    //     int gcd = 1;
+    //     for(int i = 1; i <= a && i <= b; i++){
+    //         if(a % i == 0 && b % i == 0){
+    //             gcd = i;
+    //         }
+    //     }        System.out.println(gcd);
+    // }
+
+
+
+//Write a program to print Fibonacci series of n terms where n is input by user using functions.
+    // public static void printFibonacci(int n){
+    //     int a = 0;
+    //     int b = 1;
+    //     for(int i = 1; i <= n; i++){
+    //         System.out.print(a + " ");
+    //         int nextTerm = a + b;
+    //         a = b;
+    //         b = nextTerm;
+    //     }
+    // }
+
+
+// Write a function to check if a number is an Armstrong number or not. An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. For example, 371 is an Armstrong number since 3^3 + 7^3 + 1^3 = 371.
+    public static void checkArmstrong(int n){
+        int temp = n;
+        int sum = 0;
+        while(n>0){
+            int digit = n % 10;
+            sum = sum + (digit * digit * digit);
+            n = n / 10;
         }
-        System.out.println(result);
-    }   
+        if(sum == temp){
+            System.out.println("It's an Armstrong number");
+        } else {
+            System.out.println("It's Not an Armstrong number");
+        }
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        int x = sc.nextInt();
-        System.out.print("Enter the power: ");
-        int n = sc.nextInt();
-        power(x, n);
+        int a = sc.nextInt();
+        checkArmstrong(a);
         sc.close();
     }
 }
