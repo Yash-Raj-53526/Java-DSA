@@ -47,5 +47,6 @@ public class Functions {
         System.out.print("Enter the power: ");
         int n = sc.nextInt();
         power(x, n);
+        sc.close();
     }
 }
