@@ -68,20 +68,20 @@ public class Functions {
 
 
 // Write a function to check if a number is an Armstrong number or not. An Armstrong number of three digits is an integer such that the sum of the cubes of its digits is equal to the number itself. For example, 371 is an Armstrong number since 3^3 + 7^3 + 1^3 = 371.
-    public static void checkArmstrong(int n){
-        int temp = n;
-        int sum = 0;
-        while(n>0){
-            int digit = n % 10;
-            sum = sum + (digit * digit * digit);
-            n = n / 10;
-        }
-        if(sum == temp){
-            System.out.println("It's an Armstrong number");
-        } else {
-            System.out.println("It's Not an Armstrong number");
-        }
-    }
+    // public static void checkArmstrong(int n){
+    //     int temp = n;
+    //     int sum = 0;
+    //     while(n>0){
+    //         int digit = n % 10;
+    //         sum = sum + (digit * digit * digit);
+    //         n = n / 10;
+    //     }
+    //     if(sum == temp){
+    //         System.out.println("It's an Armstrong number");
+    //     } else {
+    //         System.out.println("It's Not an Armstrong number");
+    //     }
+    // }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
