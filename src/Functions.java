@@ -87,7 +87,8 @@ public class Functions {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int a = sc.nextInt();
-        checkArmstrong(a);
         sc.close();
+
+        
     }
 }
