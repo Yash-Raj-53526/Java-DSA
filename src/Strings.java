@@ -37,11 +37,13 @@ public class Strings {
 
 
         //input email and print username 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter your email: ");
-        String email = sc.next();
-        String username = email.substring(0, email.indexOf('@'));
-        System.out.println("Your username is: " + username);
-        sc.close();
+        // Scanner sc = new Scanner(System.in);
+        // System.out.print("Enter your email: ");
+        // String email = sc.next();
+        // String username = email.substring(0, email.indexOf('@'));
+        // System.out.println("Your username is: " + username);
+        // sc.close();
+
+
     }
 }
