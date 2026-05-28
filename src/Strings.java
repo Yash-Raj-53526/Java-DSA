@@ -5,7 +5,7 @@ public class Strings {
         Scanner sc = new Scanner(System.in);
         String name = "Tony Stark";
         // System.out.println(name.length());
-
+        
         for(int i = 0; i < name.length(); i++){
             System.out.println(name.charAt(i)+ " at index -> " + i);
         }
