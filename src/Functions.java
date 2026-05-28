@@ -3,6 +3,17 @@ import java.util.*;
 
 
 public class Functions {
+
+
+    // public static void solvr(int num){
+    //     //call by value
+    //     System.out.println("inside solve: " +num);
+    //     num = num*10;
+    //     System.out.println("inside solve after modification: " +num);
+    // }
+
+
+
     // public static void printFactorial(int n){        
     //     if(n < 0){
     //         System.out.println("Invalid!");
@@ -85,7 +96,14 @@ public class Functions {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
+        int num = 5;
+        //solvr(num);
+        //printFactorial(num);
+        //checkPrime(num);
+        //power(2, 5);
+        //findGCD(12, 15);
+        //printFibonacci(num);
+        //checkArmstrong(num);
         
         sc.close();
 
