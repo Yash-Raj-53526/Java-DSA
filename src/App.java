@@ -2,7 +2,39 @@ import java.util.*;
 
 public class App {
      public static void main(String[] args){
-         Scanner sc = new Scanner(System.in);
+         //Scanner sc = new Scanner(System.in);
+
+        //  Lifecycle_in_JAVA s1 = new Lifecycle_in_JAVA();
+        //  s1.name = "John";
+        //  s1.age = 25;
+        //  s1.gender = "Male";
+        //  s1.id = 12345; 
+
+        // System.out.println(s1.name);
+        // System.out.println(s1.age);
+        // System.out.println(s1.gender);
+        // System.out.println(s1.id);
+        // s1.eat();
+        // s1.sleep();
+
+        //parameterized constructor
+        Lifecycle_in_JAVA s2 = new Lifecycle_in_JAVA("Alice", 30, "Female", 54321);
+        // System.out.println(s2.name);
+        // System.out.println(s2.age);
+        // System.out.println(s2.gender);
+        // System.out.println(s2.id);  
+        // s2.work();
+
+        //copy constructor
+        Lifecycle_in_JAVA s3 = new Lifecycle_in_JAVA(s2);  
+        System.out.println(s3.name);
+        System.out.println(s3.age);
+        System.out.println(s3.gender);
+        System.out.println(s3.id);
+        s3.sleep();
+        
+
+
          //System.out.print("Enter a number: ");
          //int n = sc.nextInt();
          // for(int i = 1; i <= 10; i++){  //(conditon, initialization, updation)
@@ -252,7 +284,7 @@ public class App {
          //     }
          //     System.out.println();
          // }
-         sc.close();
+         //sc.close();
 
     }
 }
