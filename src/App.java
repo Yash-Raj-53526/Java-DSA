@@ -19,19 +19,19 @@ public class App {
 
         //parameterized constructor
         Lifecycle_in_JAVA s2 = new Lifecycle_in_JAVA("Alice", 30, "Female", 54321);
-        // System.out.println(s2.name);
-        // System.out.println(s2.age);
-        // System.out.println(s2.gender);
-        // System.out.println(s2.id);  
-        // s2.work();
+        System.out.println(s2.name);
+        System.out.println(s2.age);
+        System.out.println(s2.gender);
+        System.out.println(s2.id);  
+        s2.work();
 
         //copy constructor
-        Lifecycle_in_JAVA s3 = new Lifecycle_in_JAVA(s2);  
-        System.out.println(s3.name);
-        System.out.println(s3.age);
-        System.out.println(s3.gender);
-        System.out.println(s3.id);
-        s3.sleep();
+        // Lifecycle_in_JAVA s3 = new Lifecycle_in_JAVA(s2);  
+        // System.out.println(s3.name);
+        // System.out.println(s3.age);
+        // System.out.println(s3.gender);
+        // System.out.println(s3.id);
+        // s3.sleep();
         
 
 
