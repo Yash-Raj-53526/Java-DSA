@@ -25,6 +25,7 @@ public class App {
         System.out.println(s2.id);  
         s2.work();
 
+        
         //copy constructor
         // Lifecycle_in_JAVA s3 = new Lifecycle_in_JAVA(s2);  
         // System.out.println(s3.name);
