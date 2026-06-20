@@ -59,6 +59,41 @@ class Cat extends LivingBeing {
     }
 }   
 
+class vehicle {
+    public String name;
+    public String type;
+    public String color;
+
+    public vehicle(String name, String type, String color) {
+        this.name = name;
+        this.type = type;
+        this.color = color;
+    }
+    public void start() {
+        System.out.println("The " + color + " " + name + " is starting.");
+    }
+    public void race(){
+        System.out.println("The " + color + " " + name + " is racing.");
+    }
+    public void stop() {
+        System.out.println("The " + color + " " + name + " is stopping.");
+    }
+}
+
+class car extends vehicle {
+    // Constructor for the car class because it inherits from the vehicle class so it needs to call the constructor of the vehicle class , 
+    // in a nutshell it needs to call the constructor of the parent class vehicle to initialize the properties of the car class.
+    public car(String name, String type, String color) {
+        super(name, type, color);
+    }
+    public void horn() {
+        System.out.println("The " + color + " " + name + " is honking.");
+    }
+}
+
+
+
+
 
 
 public class Main {
@@ -74,8 +109,21 @@ public class Main {
         // Child2 objC2 = new Child2();
         //objC2.showChild2(); // method from Child2 class
 
-        Cat cat = new Cat();
-        cat.sound(); // Output: Meow!
+        //Cat kitty = new Cat();
+        //kitty.sound(); // Output: Meow! 
+
+        car car1 = new car("Toyota", "Sedan", "Red");
+        car car2 = new car("Honda", "SUV", "Blue");
+        car1.start(); // Output: The Red Toyota is starting
+        car1.horn(); // Output: The Red Toyota is honking
+        car1.stop(); // Output: The Red Toyota is stopping
+        System.out.println();
+        System.out.println("------------------------"); 
+        System.out.println();
+        car2.start(); // Output: The Blue Honda is starting
+        car2.horn(); // Output: The Blue Honda is honking
+        car2.stop(); // Output: The Blue Honda is stopping
+        
 
 
     }
