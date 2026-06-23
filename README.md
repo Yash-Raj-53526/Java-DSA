@@ -1,45 +1,83 @@
-## java-dsa
+# ☕ Java DSA
 
-A small collection of Java data-structures and algorithm examples and patterns used for learning and demonstrations.
+This repository contains my Java and Data Structures & Algorithms (DSA) practice code.
 
-## Getting Started
+## 📚 What You'll Find
 
-This repository uses a simple layout:
-- `src/` — Java source files
-- `lib/` — optional libraries
-- `bin/` — compiled classes (ignored by Git)
+- Java Basics
+- Object-Oriented Programming (OOP)
+- Arrays
+- Strings
+- Recursion
+- Searching Algorithms
+- Sorting Algorithms
+- Linked Lists
+- Stacks
+- Queues
+- Trees
+- Graphs
+- Dynamic Programming
+- Problem Solving Questions
 
-## Prerequisites
+## 🎯 Goal
 
-- Java JDK 17 or newer installed and on your `PATH`.
+My goal is to:
 
-## Build
+- Build strong problem-solving skills
+- Master Data Structures and Algorithms using Java
+- Prepare for coding interviews and placements
+- Improve coding consistency
 
-Compile sources into the `bin/` folder:
+## 🛠️ Language Used
 
-```bash
-javac -d bin src/*.java
+- Java
+
+## 📂 Repository Structure
+
+```text
+Java-DSA/
+│
+├── Basics/
+├── OOP/
+├── Arrays/
+├── Strings/
+├── Recursion/
+├── Searching/
+├── Sorting/
+├── LinkedList/
+├── Stack/
+├── Queue/
+├── Trees/
+├── Graphs/
+└── Problems/
 ```
 
-## Run
+## 🚀 How to Run
 
-Run the `App` class from the compiled `bin` directory:
-
-```bash
-java -cp bin App
-```
-
-If you use preview language features, enable them when running (example):
+1. Clone the repository
 
 ```bash
-java --enable-preview -cp bin App
+git clone https://github.com/Yash-Raj-53526/Java-DSA.git
 ```
 
-## Notes
+2. Open the project in VS Code or IntelliJ IDEA
 
-- The repository ignores compiled artifacts (`bin/`) via `.gitignore`.
+3. Compile and run:
 
-## Contributing
+```bash
+javac Main.java
+java Main
+```
 
-Feel free to open issues or submit pull requests with improvements or new examples.
+## 📈 Progress
 
+This repository is updated regularly as I learn and practice Java and DSA.
+
+## 👨‍💻 Author
+
+**Yash Raj Pandey**
+
+Aspiring Software Engineer | Java Developer | DSA Learner
+
+---
+⭐ If you find this repository helpful, consider giving it a star.
