@@ -11,8 +11,6 @@ abstract class Vehicle{
     }
 
     abstract void start();
-
-   
 }
 
 class Car extends Vehicle{
@@ -23,8 +21,6 @@ class Car extends Vehicle{
     void start(){
         System.out.println("Car is starting with a key.");
     }
-   
-    
 }
 
 class Bike extends Vehicle{
@@ -35,9 +31,10 @@ class Bike extends Vehicle{
     void start(){
         System.out.println("Bike is starting with a button.");
     }
-    
-   
 }
+
+
+//-----------------------------------------------------------------------------------------------
 
 
 abstract class Shape{
@@ -52,6 +49,9 @@ class Circle extends Shape{
     void area(){
         System.out.println("Area of Circle: " + (3.14 * radius * radius));
     }
+    void circumference(){
+        System.out.println("Circumference of Circle: " + (2 * 3.14 * radius));
+    }
 }
 
 class Rectangle extends Shape{
@@ -64,14 +64,22 @@ class Rectangle extends Shape{
     void area(){
         System.out.println("Area of Rectangle: " + (length * width));
     }
+    void perimeter(){
+        System.out.println("Perimeter of rectangle is: "+ (2*(length+width)));
+    }
 }
+
+
 public class MAIN {
     public static void main(String[] args) {
-        Shape circle = new Circle(5);
-        Shape rectangle = new Rectangle(4, 6);
-
+        Circle circle = new Circle(5);
+        Rectangle rectangle = new Rectangle(4, 6);
+        
+        circle.circumference();
         circle.area();
         rectangle.area();
+        rectangle.perimeter();
+
     }
 
    
