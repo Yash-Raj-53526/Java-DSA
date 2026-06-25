@@ -79,14 +79,10 @@ public class MAIN {
         circle.area();
         rectangle.area();
         rectangle.perimeter();
-
     }
-
-   
     //Vehicle is an abstract class that cannot be instantiated directly. 
     // It serves as a blueprint for the Car and Bike classes, 
     // which provide specific implementations of the start() method. 
     // The display() method is inherited by both Car and Bike, 
     // allowing them to display their brand information.
-
 }
