@@ -82,7 +82,7 @@ public class Main {
         System.out.println("popped: " + stack);
         stack.peek();
         System.out.println("peek: " + stack.peek());
-        System.out.println("search: " + stack.search("B"));
+        System.out.println("search B: " + stack.search("B"));
         System.out.println("empty: " + stack.empty());
         stack.clear();
         System.out.println("cleared stack: " + stack);
@@ -112,8 +112,14 @@ public class Main {
         queue.offer(923);
         queue.offer(456);
         queue.offer(2);
-        System.out.println("queue: " + queue); 
+        System.out.println("queue: " + queue);
         
+        System.out.println("peeking" + queue.peek());
+
+        System.out.println("");
+
+
+
 
         
     }
