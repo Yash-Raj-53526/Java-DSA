@@ -16,17 +16,17 @@ public class Main {
         list.remove(1);
         System.out.println(list);
         System.out.println("list.size(): " + list.size());
-        System.out.println("--------------------------------");
+        
 
 
         //Iterating through the list
+        System.out.println("Iterating through the list using for loop");
         Iterator<Integer> it = list.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
-            System.out.println();
         }
-        System.out.println("--------------------------------");
-        System.out.println(list);
+        
+        System.out.println("array list: " + list);
         Collections.sort(list);
         System.out.println("sorted list: " + list);
         Collections.reverse(list);
@@ -44,10 +44,77 @@ public class Main {
         ll.add("Apple");
         ll.add("Banana");
         ll.add("Mango");
-        System.out.println(ll);
+        System.out.println("linked list: " + ll);
         ll.addFirst("Grapes");
         System.out.println(ll);
         ll.addLast("Pineapple");
         System.out.println(ll);   
+
+
+        //Iterating through the linked list
+        Iterator<String> it1 = ll.iterator();
+        while(it1.hasNext()){
+            System.out.println(it1.next());
+        }
+
+        System.out.println("--------------------------------");
+
+
+        //vector -- dynamic array, similar to ArrayList but synchronized means thread-safe i'e multiple threads can access it at the same time without any issues
+        Vector<Double> v = new Vector<>();
+        v.add(12.5);
+        v.add(15.5);
+        v.add(20.5);
+        System.out.println("vector v: " + v);
+
+        System.out.println("--------------------------------");
+
+
+        //Stack -- LIFO (Last In First Out) data structure, used to store data in a linear order, used in function calls, undo operations, etc.
+        Stack<String> stack = new Stack<>();
+        stack.push("A");
+        stack.push("B");
+        stack.push("C");
+        System.out.println("stack: " + stack);
+        stack.push("D");
+        System.out.println("pushed D: " + stack);
+        stack.pop();
+        System.out.println("popped: " + stack);
+        stack.peek();
+        System.out.println("peek: " + stack.peek());
+        System.out.println("search: " + stack.search("B"));
+        System.out.println("empty: " + stack.empty());
+        stack.clear();
+        System.out.println("cleared stack: " + stack);
+
+        //Iterating through the stack
+            Iterator<String> it2 = stack.iterator();
+            while(it2.hasNext()){
+                System.out.println(it2.next());
+            }
+
+        System.out.println("--------------------------------");
+
+        //Queue -- FIFO (First In First Out) data structure, used to store data in a linear order, used in function calls, print jobs, etc.
+        Queue<Integer> queue = new LinkedList<>();
+
+        //System.out.print("Enter the elements in the queue: ");
+        // Scanner sc = new Scanner(System.in);
+        // String add = "y";
+        // while(add.equals("y")){
+        //     queue.add(sc.nextInt());
+        //     System.out.println("Do you want to add more elements? (y/n)");
+        //     add = sc.next();
+        // }
+        
+        queue.offer(90);
+        queue.offer(23);
+        queue.offer(923);
+        queue.offer(456);
+        queue.offer(2);
+        System.out.println("queue: " + queue); 
+        
+
+        
     }
 }
