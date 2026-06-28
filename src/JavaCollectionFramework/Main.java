@@ -1,6 +1,9 @@
 package JavaCollectionFramework;
 
+import java.net.SocketTimeoutException;
 import java.util.*;
+
+import javax.swing.AbstractAction;
 
 public class Main {
     public static void main(String[] args) { //This method has a constructor name 
@@ -97,16 +100,6 @@ public class Main {
 
         //Queue -- FIFO (First In First Out) data structure, used to store data in a linear order, used in function calls, print jobs, etc.
         Queue<Integer> queue = new LinkedList<>();
-
-        //System.out.print("Enter the elements in the queue: ");
-        // Scanner sc = new Scanner(System.in);
-        // String add = "y";
-        // while(add.equals("y")){
-        //     queue.add(sc.nextInt());
-        //     System.out.println("Do you want to add more elements? (y/n)");
-        //     add = sc.next();
-        // }
-        
         queue.offer(90);
         queue.offer(23);
         queue.offer(923);
@@ -114,13 +107,31 @@ public class Main {
         queue.offer(2);
         System.out.println("queue: " + queue);
         
-        System.out.println("peeking" + queue.peek());
+        System.out.println("peeking " + queue.peek());
 
-        System.out.println("");
+        System.out.println("Removing " + queue.poll());
 
+        System.out.println(queue);  
+        System.out.println("-------------------------------------------");
 
+        //ArrayDeque
+        ArrayDeque<String> dq = new ArrayDeque<>();
+        dq.offer("Yash");
+        dq.offer("Tripti");
+        dq.offer("Shubh");
+        dq.offer("Plant");
+        System.out.println("ArrayDeque: " + dq);
+        // System.out.println("Peek: "+ dq.peek());
+        // System.out.println("Poll: " + dq.poll());
+        System.out.println("Itrating :- ");
+        //itration
+        // Iterator<String> IT = dq.iterator();
+        // while(IT.hasNext()){
+        //     System.out.println(IT.next());
+        // }
 
-
-        
+        for(String name : dq){
+            System.out.println(name);
+        }
     }
 }
