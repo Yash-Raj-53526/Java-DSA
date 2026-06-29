@@ -142,13 +142,6 @@ public class Main {
         set.add("Tree");
         set.add("Plant");
         set.add("Water");
-        System.out.println("Set: " + set);
-
-
-
-        
-
-    
+        System.out.println("Set: " + set);    
     }
 }
-    
