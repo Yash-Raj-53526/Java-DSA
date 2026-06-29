@@ -133,5 +133,22 @@ public class Main {
         for(String name : dq){
             System.out.println(name);
         }
+
+        System.out.println("-----------------------------------------------");
+
+        Set<String> set = new HashSet<>();
+        set.add("Yash");
+        set.add("Shubh");
+        set.add("Tree");
+        set.add("Plant");
+        set.add("Water");
+        System.out.println("Set: " + set);
+
+
+
+        
+
+    
     }
 }
+    
