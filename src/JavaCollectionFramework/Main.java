@@ -143,5 +143,16 @@ public class Main {
         set.add("Plant");
         set.add("Water");
         System.out.println("Set: " + set);    
+
+
+
+        HashSet<Student> set2 = new HashSet<>();
+        Student s1 = new Student("Yash",39,"A");
+        Student s2 = new Student("Tripti",37,"A");
+        Student s3 = new Student("Satkirat",27,"A");
+        Student s4 = new Student("Farhan",18,"A");
+        set2.add(s1) ; set2.add(s2); set2.add(s3); set2.add(s4);
+
+        System.out.println("Set of Students : " + set2);
     }
 }
