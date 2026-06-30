@@ -35,21 +35,21 @@ My goal is to:
 ## 📂 Repository Structure
 
 ```text
-Java-DSA/
+Java-DSA
 │
-├── Basics/
-├── OOP/
-├── Arrays/
-├── Strings/
-├── Recursion/
-├── Searching/
-├── Sorting/
-├── LinkedList/
-├── Stack/
-├── Queue/
-├── Trees/
-├── Graphs/
-└── Problems/
+├── Basics
+├── OOP
+├── Arrays
+├── Strings
+├── Recursion
+├── Searching
+├── Sorting
+├── LinkedList
+├── Stack
+├── Queue
+├── Trees
+├── Graphs
+└── Problems
 ```
 
 ## 🚀 How to Run

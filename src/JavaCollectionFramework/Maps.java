@@ -6,7 +6,7 @@ import javax.sound.sampled.SourceDataLine;
 public class Maps {
     public static void main(String[] args) {
         Map<Integer,String> map1 = new HashMap<>();
-    // insertion using an instance initializer
+        // insertion using an instance initializer
         map1.put(1, "Yash");
         map1.put(2 , "Tripti");
         map1.put(3, "Shubh");
@@ -31,5 +31,26 @@ public class Maps {
         for(Map.Entry<Integer,String> entry : map2.entrySet()){
             System.out.println( entry.getKey()+" -> "+entry.getValue());
         }
+
+        Map<Integer,String> students = new LinkedHashMap<>();
+
+        students.put(103, "Aman");
+        students.put(101, "Yash");
+        students.put(102, "Rahul");
+
+        System.out.println("Students: " + students);
+
+        System.out.println("Student 101: " + students.get(101));
+
+        students.replace(102, "Shubh");
+
+        System.out.println("After Replace: " + students);
+
+        students.remove(103);
+
+        System.out.println("After Remove: " + students);
+
+        
+        
     }
 }
