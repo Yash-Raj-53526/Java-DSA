@@ -34,8 +34,8 @@ public class Main {
         System.out.println("sorted list: " + list);
         Collections.reverse(list);
         System.out.println("reversed list: " + list);
-        ArrayList<Integer> clonedList = (ArrayList<Integer>) list.clone();
-        System.out.println("cloned list: " + clonedList);
+        // ArrayList<Integer> clonedList = (ArrayList<Integer>) list.clone();
+        // System.out.println("cloned list: " + clonedList);
 
         System.out.println("--------------------------------");
         
