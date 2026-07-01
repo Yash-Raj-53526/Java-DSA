@@ -147,10 +147,10 @@ public class Main {
 
 
         HashSet<Student> set2 = new HashSet<>();
-        Student s1 = new Student("Yash",39,"A");
-        Student s2 = new Student("Tripti",37,"A");
-        Student s3 = new Student("Satkirat",27,"A");
-        Student s4 = new Student("Farhan",18,"A");
+        Student s1 = new Student("Yash",39,"A",19);
+        Student s2 = new Student("Tripti",37,"A",18);
+        Student s3 = new Student("Satkirat",27,"A",18);
+        Student s4 = new Student("Farhan",18,"A",18);
         set2.add(s1) ; set2.add(s2); set2.add(s3); set2.add(s4);
 
         System.out.println("Set of Students : " + set2);
