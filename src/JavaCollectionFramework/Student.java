@@ -47,6 +47,6 @@ public class Student implements Comparable<Student> {
     public int compareTo(Student that){
         //sorts on the basis of roll no.
         return this.rollno - that.rollno;
-
     }
+    
 }
