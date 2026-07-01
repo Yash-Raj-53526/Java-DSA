@@ -46,11 +46,11 @@ public class Maps {
 
         System.out.println("After Replace: " + students);
 
-        students.remove(103);
-
-        System.out.println("After Remove: " + students);
-
-        
-        
+        //Keyset
+        Set<Integer> Keys = students.keySet();
+        System.out.println("Keys: " + Keys);
+        //Values
+        Collection<String> Values = students.values();
+        System.out.println("Values: " + Values);
     }
 }
