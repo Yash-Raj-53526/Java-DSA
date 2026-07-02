@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ARRAYS {
+public class Array1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
     // input and output of an array   
