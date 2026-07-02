@@ -3,22 +3,15 @@ import java.util.HashMap;
 import javax.print.attribute.HashPrintJobAttributeSet;
 
 public class Array3 {
-    public static void ReverseArray(int arr[]){
-        int n = arr.length;
-        int i = 0;
-        int j=n-1;
-        while(i <= j){
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-            i++;
-            j--;
-        }
-        System.out.println("Reversed Array is: ");
-        for(int k=0; k<n; k++){
-            System.out.print(arr[k] + " ");
-        }
+    public static void reverse(int[] arr, int start, int end) {
+    while (start < end) {
+        int temp = arr[start];
+        arr[start] = arr[end];
+        arr[end] = temp;
+        start++;
+        end--;
     }
+}
 
 
     public static void ShiftArray(int arr[]){
@@ -75,14 +68,42 @@ public class Array3 {
         System.out.println("Mode is: " + maxFreqKey + " with frequency: " + maxFreq);
     }
 
-    public static void main(String[] args){
-        int arr[] = {1, 1,1,1,1,3,3,3,2,2,6,7,7,8,8,8,5,5,5,5,5,5,2, 3, 4, 5};
-        //ReverseArray(arr);
-        //ShiftArray(arr);
-        //PrintAlternate(arr);
-        getMode(arr);
+    public static void rotateright(int arr[], int k){
+        int n = arr.length;
+        k = k % n; // in case k is greater than n
+        reverse(arr, 0, n-1);
+        reverse(arr, 0, k-1);
+        reverse(arr, k, n-1);
+    }
 
+    public static void main(String[] args){
+        int[] arr = {1, 2, 3, 4, 5};
+        int k = 2;
+        
+        System.out.print("Before: ");
+        printArray(arr);
+        
+        rotateright(arr, k);
+        
+        System.out.print("After:  ");
+        printArray(arr);
     }
     
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+
+    // System.out.println("Reversed Array is: ");
+    // reverse(arr, 0, arr.length - 1);
+    // for(int i=0; i<arr.length; i++){
+    //     System.out.print(arr[i] + " ");
+    // }
+    // System.out.println();
+    //ShiftArray(arr);
+    //PrintAlternate(arr);
+    //getMode(arr); 
 }
  
