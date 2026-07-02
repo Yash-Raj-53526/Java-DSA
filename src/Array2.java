@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Arrray2 {
+public class Array2 {
     public static double getAvg(int arr[]){
         double sum = 0;
         for(int i:arr){
