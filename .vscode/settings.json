@@ -1,5 +1,6 @@
 {
     "github.copilot.chat.notebook.enhancedNextEditSuggestions.enabled": true,
     "github.copilot.chat.nesFetcher": "electron-fetch",
-    "java.debug.settings.onBuildFailureProceed": true
+    "java.debug.settings.onBuildFailureProceed": true,
+    "editor.inlineSuggest.enabled": true
 }
