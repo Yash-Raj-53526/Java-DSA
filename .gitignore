@@ -1,2 +1,11 @@
 *.class
 .class/
+
+# ignore personal files
+*.log
+*.tmp
+*.user
+*.DS_Store
+.vscode/
+.idea/
+java-dsa/
