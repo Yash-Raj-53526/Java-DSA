@@ -86,11 +86,11 @@ public class Array3 {
         int[] arr = {1, 2, 3, 4, 5};
         int k = 2;
         
-        // System.out.print("Before: ");
-        // printArray(arr);
-        // rotateright(arr, k);
-        // System.out.print("After:  ");
-        // printArray(arr);
+         System.out.print("Before: ");
+         printArray(arr);
+         rotateright(arr, k);
+         System.out.print("After:  ");
+         printArray(arr);
         // System.out.println();
         //ShiftArray(arr);
         //PrintAlternate(arr);
