@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "Array.TwoSum",
+            "projectName": "java-dsa_7ec1bbc5"
+        },
+        {
+            "type": "java",
             "name": "CountZeroNOne",
             "request": "launch",
             "mainClass": "Array.CountZeroNOne",
