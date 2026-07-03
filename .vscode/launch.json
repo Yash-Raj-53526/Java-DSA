@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CountZeroNOne",
+            "request": "launch",
+            "mainClass": "Array.CountZeroNOne",
+            "projectName": "java-dsa_7ec1bbc5"
+        },
+        {
+            "type": "java",
             "name": "Array3",
             "request": "launch",
             "mainClass": "Array.Array3",
