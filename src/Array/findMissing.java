@@ -7,8 +7,9 @@ public class findMissing {
         int n = arr.length;
         for (int i = 0; i < n; i++) {
             int val = Math.abs(arr[i]);
-            if (arr[val - 1] > 0)
+            if (arr[val - 1] > 0) {
                 arr[val - 1] *= -1;
+            }
         }
 
         List<Integer> ans = new ArrayList<>();
