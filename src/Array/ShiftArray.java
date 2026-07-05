@@ -7,13 +7,13 @@ public class ShiftArray {
         for (int i = n - 1; i > 0; i--) {
             arr[i] = arr[i - 1];
         }
-        arr[0] = temp;
+        arr[0] = temp; // last element becomes first
         System.out.println("Shifted Array is: ");
         PrintArray.printArray(arr);
     }
 
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 4, 5};
+        int[] arr = { 1, 2, 3, 4, 5 };
         shiftArray(arr);
     }
 }
