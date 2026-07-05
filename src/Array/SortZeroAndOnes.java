@@ -24,7 +24,7 @@ public class SortZeroAndOnes {
     }
 
     public static void main(String[] args) {
-        int arr[] = { 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0, 1 };
+        int arr[] = { 0, 1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 0 };
         int ans[] = sort(arr);
         for (int i = 0; i < ans.length; i++) {
             System.out.print(ans[i] + " ");
