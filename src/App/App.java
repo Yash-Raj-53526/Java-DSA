@@ -1,10 +1,13 @@
+package App;
+
 import java.util.*;
+import Lifecycle.Lifecycle;
 
 public class App {
      public static void main(String[] args){
          //Scanner sc = new Scanner(System.in);
 
-        //  Lifecycle_in_JAVA s1 = new Lifecycle_in_JAVA();
+        //  Lifecycle s1 = new Lifecycle();
         //  s1.name = "John";
         //  s1.age = 25;
         //  s1.gender = "Male";
@@ -18,7 +21,7 @@ public class App {
         // s1.sleep();
 
         //parameterized constructor
-        Lifecycle_in_JAVA s2 = new Lifecycle_in_JAVA("Alice", 30, "Female", 54321);
+        Lifecycle s2 = new Lifecycle("Alice", 30, "Female", 54321);
         System.out.println(s2.name);
         System.out.println(s2.age);
         System.out.println(s2.gender);
@@ -27,7 +30,7 @@ public class App {
 
         
         //copy constructor
-        // Lifecycle_in_JAVA s3 = new Lifecycle_in_JAVA(s2);  
+        // Lifecycle s3 = new Lifecycle(s2);  
         // System.out.println(s3.name);
         // System.out.println(s3.age);
         // System.out.println(s3.gender);
@@ -97,6 +100,7 @@ public class App {
         //     for(int j =1;j<=5;j++){
         //         //cell -> (i,j)
         //         if(i==1 || j==1 || i==5 || j==5){
+        //             System.out.print("*");
         //             System.out.print("*");
         //         } else {
         //             System.out.print(" ");
@@ -172,8 +176,8 @@ public class App {
          //     System.out.println();
          // }
 
-        
-        
+
+
 
          // //butterfly pattern
          // int n = 5;
@@ -287,5 +291,5 @@ public class App {
          // }
          //sc.close();
 
-    }
+     }
 }

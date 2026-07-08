@@ -1,6 +1,8 @@
-import java.util.*;
-public class Basic_maths {
+package BasicMaths;
 
+import java.util.*;
+
+public class BasicMaths {
 
     public static int reverseNum(int num){
         int reversed = 0;

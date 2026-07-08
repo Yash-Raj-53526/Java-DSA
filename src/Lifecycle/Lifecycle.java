@@ -1,4 +1,6 @@
-public class Lifecycle_in_JAVA {
+package Lifecycle;
+
+public class Lifecycle {
     //atributes
     public String name;
     public int age;
@@ -6,12 +8,12 @@ public class Lifecycle_in_JAVA {
     public int id;
 
     //default constructor
-    public Lifecycle_in_JAVA(){
+    public Lifecycle(){
         System.out.println("Default constructor called.");
 
     }
     //parameterized constructor
-    public Lifecycle_in_JAVA(String name, int age, String gender, int id){
+    public Lifecycle(String name, int age, String gender, int id){
         System.out.println("Parameterized constructor called.");
         this.name = name;
         this.age = age;
@@ -21,7 +23,7 @@ public class Lifecycle_in_JAVA {
     }
 
     //copy constructor
-    public Lifecycle_in_JAVA(Lifecycle_in_JAVA s){
+    public Lifecycle(Lifecycle s){
         System.out.println("Copy constructor called.");
         this.name = s.name;
         this.age = s.age;
