@@ -17,9 +17,9 @@ public class NearlySortedArray {
                 return mid + 1;
             }
             if (arr[mid] > tar) {
-                start = mid + 1;
+                start = mid + 2;
             } else {
-                end = mid - 1;
+                end = mid - 2;
             }
         }
         return -1;
