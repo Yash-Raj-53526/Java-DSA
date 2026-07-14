@@ -3,7 +3,7 @@ package BinarySearch;
 public class EKO_SPOJ {
 
     public static boolean isPossible(int trees[], int m, int maxHeight) {
-        int woodCollected = 0;
+        long woodCollected = 0;
         for (int i = 0; i < trees.length; i++) {
             if (trees[i] > maxHeight) {
                 woodCollected += trees[i] - maxHeight;
