@@ -17,9 +17,11 @@ public class NearlySortedArray {
                 return mid + 1;
             }
             if (arr[mid] > tar) {
-                start = mid + 2;
-            } else {
-                end = mid - 2;
+                start = mid + 2; // skip mid and mid +1 because they are already checked and they are smaller
+                                 // than target
+            } else { // arr[mid] < tar
+                end = mid - 2; // skip mid and mid -1 because they are already checked and they are greater
+                               // than target
             }
         }
         return -1;
