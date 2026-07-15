@@ -2,6 +2,10 @@ package BinarySearch;
 
 public class matrix2D {
     // search element in 2 d matrix with binary search
+
+    // mid/totalCol = rowIndex
+    // mid%totalCol = colIndex
+
     public static int search(int matrix[][], int target) {
         int n = matrix.length;
         int m = matrix[0].length;
