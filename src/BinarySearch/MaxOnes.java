@@ -32,7 +32,7 @@ public class MaxOnes {
             int firstIndex = FirstOccurrence(arr, row);
             int CurrentCount = TotalCol - firstIndex;
 
-            if (CurrentCount > maxOneCount) {
+            if (CurrentCount != 0 && CurrentCount > maxOneCount) {
                 maxOneCount = CurrentCount;
                 maxOneRow = row;
             }
