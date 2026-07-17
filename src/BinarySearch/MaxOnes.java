@@ -4,7 +4,7 @@ public class MaxOnes {
     public static int FirstOccurrence(int arr[][], int rowIndex) {
         int TotalCol = arr[0].length;
         int ans = -1;
-        if (arr[rowIndex][TotalCol] == 0) {
+        if (arr[rowIndex][TotalCol - 1] == 0) {
             return TotalCol;
         } else {
             int s = 0;
